@@ -1,0 +1,28 @@
+1. Movies
+	- Action
+		-scifi
+			- terminator.txt
+		-superhero
+		-batman.txt
+		-matric-reloaded.txt
+		-matrix-revolutions.txt
+		-superman.txt
+		-wonderwoman.txt
+	- Comedy
+		-slapstick
+			- waterboy.txt
+			- zoolander.txt
+		-satire
+			-fightclub.txt
+		-the-office.txt
+	- Drama
+		-biopic
+			- cleopatra.txt
+			- lincoln.txt
+			- frida.txt
+			- notorious.txt
+			- ray.txt
+		-hostorical
+			- gladiator.txt
+			- selma.txt
+	- genres.txt
