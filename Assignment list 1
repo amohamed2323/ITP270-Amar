@@ -1,0 +1,56 @@
+#listing the Hairstyles
+Hairstyles = ["mullet", "buzz", "curly", "bangs", "shagg", "bob", "extensions"]
+#listing Prices for each hairstyle
+prices = [5, 10, 12, 15, 18, 20, 30]
+#listing the number of times a hairstyle was got last week
+last_week = [2, 3, 5, 8, 4, 4, 6]
+
+#Calculating the total money made for each hairstyle
+mulletTotal = 0
+mulletTotal = prices[0] * last_week[0]
+
+buzzTotal = 0
+buzzTotal = prices[1] * last_week[1]
+
+curlyTotal = 0
+curlyTotal = prices[2] * last_week[2]
+
+bangsTotal = 0
+bangsTotal = prices[3] * last_week[3]
+
+shaggTotal = 0
+shaggTotal = prices[4] * last_week[4]
+
+bobTotal = 0
+bobTotal = prices[5] * last_week[5]
+
+extensionsTotal = 0
+extensionsTotal = prices[6] * last_week[6]
+
+#Printing the amount of times a style was sold, and the amount a style made $ wise
+print("Last week:\n")
+print("Mullet cut sold", last_week[0], "times")
+print("Mullet cut made $" + str(mulletTotal), "\n")
+
+print("Buzz cut sold", last_week[1], "times")
+print("Buzz cut made $" + str(buzzTotal), "\n")
+
+print("Curly cut sold", last_week[2], "times")
+print("Curly cut made $" + str(curlyTotal), "\n")
+
+print("Bangs cut sold", last_week[3], "times")
+print("Bangs cut made $" + str(bangsTotal), "\n")
+
+print("Shagg cut sold", last_week[4], "times")
+print("Shagg cut made $" + str(shaggTotal), "\n")
+
+print("Bob cut sold", last_week[5], "times")
+print("Bob cut made $" + str(bobTotal), "\n")
+
+print("Extensions cut sold", last_week[6], "times")
+print("Extensions cut made $" + str(extensionsTotal), "\n")
+
+#total revenue calculation for all the styles in one week
+allCutsTotal = mulletTotal + buzzTotal + curlyTotal + bangsTotal + shaggTotal + bobTotal + extensionsTotal
+
+print("Total Revenue for the week is $" + str(allCutsTotal))
