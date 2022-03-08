@@ -1,0 +1,68 @@
+#APPEND_SIZE
+
+#defining a function that has "lst" as the parameter
+def append_size(lst):
+#is getting the "len" of lst
+  return lst + [len(lst)]
+#printing "23, 42, 108" and then the length of lst
+print(append_size([23, 42, 108]))
+
+
+#APPEND_SUM
+
+#defining a function with a parameter of lst
+def append_sum(lst):
+#creating a for loop that loops 3 times
+  for sum in range (1, 4):
+#making the variable sum = to the last number in lst plus the second to last number
+    sum = lst[-1] + lst[-2]
+#appending the variable sum to the end of the lst
+    lst.append(sum)
+  return lst
+#printing lst which is 1, 1, 2 and then the numbers from the loop function 3, 5, 8
+print(append_sum([1, 1, 2]))
+
+#LARGER LIST
+
+#defining a function with 2 parameters
+def larger_list(lst1, lst2):
+  #checking to see if the length of lst1 is greater than or equal to lst2
+  if len(lst1) >= len(lst2):
+    #returns lst1 as the last number in the lst list
+    return lst1[-1]
+  else:
+    #returns lst2 as the last number in the lst2 list
+    return lst2[-1]
+#this defines the lists of lst1 and lst2, giving them lengths
+#also it prints larger_list's parameter which ends up being the return of lst1[-1] in this case
+print(larger_list([4, 10, 2, 5], [-10, 2, 5, 10]))
+
+#MORE THAN N
+
+#Defining a function with 3 parameters
+def more_than_n(lst, item, n):
+#using the function .count to determine if item appears in lst more times than n
+  if lst.count(item) > lst.count(n):
+#returns the value of the final print of function more_than_n as "True"
+    return True
+#else is here in case item appears less than n inside of lst
+  else:
+#returns the value of the final print of function more_than_n as "False"
+    return False
+#prints the function more_than_n along with giving the parameters lst/item/n their values
+print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
+
+#Combine Sort
+
+#defining the function combine_sort and giving it 2 parameters
+def combine_sort(lst1, lst2):
+#this using the function sorted() on the 2 parameters and adding them together to then be returned as the result of the function combine_sort
+  return sorted(lst1 + lst2)
+#defining the lists of the 2 parameters and printing the function combine_sort
+print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))
+
+
+
+
+
+
